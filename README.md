@@ -6,3 +6,4 @@ str_manip.py takes an input string of odd length greater than 7 characters, and 
 Rock-paper-scissors.py takes two players' names and choices of move, and determines the winner using a dictionary.
 iteration.py runs a while loop for five iterations, each iteration takes a user input name and prints [name] is awesome!
 gradecalc.py calculates a percentage mark out of 100 based on input assessment scores, and returns this percentage along with a grade from A-D or a failure to pass message.
+list.py takes a list of numbers as input, as well as a bound to search for numbers less than, and prints a new list consisting of values from the input list less than the bound.
