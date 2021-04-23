@@ -3,7 +3,7 @@ age.py takes a users name and age in 2021 as inputs, and prints a message tellin
 fact.py computes the factorial of an input value. The user specifies whether they are entering an int or a float, if an int is entered the factorial is calculated recursively and returned, if a float is entered as x then the gamma function of x+1 is approximated and returned as the factorial.
 divcheck.py takes two integer inputs and computes input 1 modulo input 2. If the modulus is zero the program returns a message telling the user that input 1 is divisible by input 2 (in the case that input 2 = 2 the message is input 1 is even) and otherwise returns a message that input 1 is not divisible by input 2.
 str_manip.py takes an input string of odd length greater than 7 characters, and prints the middle three characters of the string as well as the entire string with the middle three characters in upper case.
-Rock-paper-scissors.py takes two players' names and choices of move, and determines the winner using a dictionary.
+Rock-paper-scissors.py takes a player's name (single player) or two players' names (two player) and choices of move, and determines the winner using a dictionary.
 iteration.py runs a while loop for five iterations, each iteration takes a user input name and prints [name] is awesome!
 gradecalc.py calculates a percentage mark out of 100 based on input assessment scores, and returns this percentage along with a grade from A-D or a failure to pass message.
 list.py takes a list of numbers as input, as well as a bound to search for numbers less than, and prints a new list consisting of values from the input list less than the bound.
