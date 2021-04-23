@@ -4,3 +4,5 @@ fact.py computes the factorial of an input value. The user specifies whether the
 divcheck.py takes two integer inputs and computes input 1 modulo input 2. If the modulus is zero the program returns a message telling the user that input 1 is divisible by input 2 (in the case that input 2 = 2 the message is input 1 is even) and otherwise returns a message that input 1 is not divisible by input 2.
 str_manip.py takes an input string of odd length greater than 7 characters, and prints the middle three characters of the string as well as the entire string with the middle three characters in upper case.
 Rock-paper-scissors.py takes two players' names and choices of move, and determines the winner using a dictionary.
+iteration.py runs a while loop for five iterations, each iteration takes a user input name and prints [name] is awesome!
+gradecalc.py calculates a percentage mark out of 100 based on input assessment scores, and returns this percentage along with a grade from A-D or a failure to pass message.
