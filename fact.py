@@ -12,13 +12,10 @@ else:
     x = float(input("What is your float? "))
 
     def gamma(n):
-        l = []
+        p = 1
         for i in range(1, 100000):
             a = (1/(1+(n/i)))*np.exp(n/i)
-            l.append(a)
+            p *= a
         b = (1/n)*np.exp(-0.5772*n)
-        return b*(np.prod(l))
+        return b*p
     print(f"factorial of x is {gamma(x+1)}")
-
-
-
