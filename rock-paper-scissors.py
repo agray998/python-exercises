@@ -13,17 +13,14 @@ if mode == "single player":
 
     comp_dict = {0: 'rock', 1: 'paper', 2: 'scissors'}
     comp_choice = comp_dict[rand.randint(2)]
+    print(f"{player_1} played {player_1_choice}")
+    print(f"computer played {comp_choice}")
+
     if player_1_choice == comp_choice:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"computer played {comp_choice}")
         print("Draw!")
     elif win[player_1_choice] == comp_choice:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"computer played {comp_choice}")
         print("Computer wins")
     else:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"computer played {comp_choice}")
         print(f"{player_1} wins")
 
 elif mode == "two player":
@@ -35,16 +32,12 @@ elif mode == "two player":
         print("Invalid move!")
     else:
         pass
+    print(f"{player_1} played {player_1_choice}")
+    print(f"{player_2} played {player_2_choice}")
 
     if player_1_choice == player_2_choice:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"{player_2} played {player_2_choice}")
         print("Draw!")
     elif win[player_1_choice] == player_2_choice:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"{player_2} played {player_2_choice}")
         print(f"{player_2} wins")
     else:
-        print(f"{player_1} played {player_1_choice}")
-        print(f"{player_2} played {player_2_choice}")
         print(f"{player_1} wins")
