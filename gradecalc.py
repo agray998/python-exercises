@@ -1,3 +1,4 @@
+# Defining percentage and grade calculation procedure
 def grade_calc(h, a, f):
     percent = (h + a + f)*100/175
     print(f"You scored {percent}%")
@@ -14,28 +15,28 @@ def grade_calc(h, a, f):
     else:
         print("Sorry, you did not pass")
 
-
+# User input homework score
 h_score = int(input("What is your homework score? "))
-if h_score < 0 or h_score > 25:
+if h_score < 0 or h_score > 25: # Check for validity of score
     print("Invalid score")
-    h_score = int(input("What is your homework score? "))
 else:
     pass
 
+# User input assessment score
 a_score = int(input("What is your assessment score? "))
-if a_score < 0 or a_score > 50:
+if a_score < 0 or a_score > 50: # Check for validity of score
     print("Invalid score")
-    a_score = int(input("What is your assessment score? "))
 else:
     pass
 
+# User input final exam score
 f_score = int(input("What is your final exam score? "))
-if f_score < 0 or f_score > 100:
+if f_score < 0 or f_score > 100: # Check for validity of score
     print("Invalid score")
-    f_score = int(input("What is your final exam score? "))
 else:
     pass
 
+# Call grade_calc procedure with user inputs as arguments
 grade_calc(h_score, a_score, f_score)
 
 
