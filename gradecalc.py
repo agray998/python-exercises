@@ -6,7 +6,6 @@ def grade_calc(h, a, f):
         if percent > x:
             grade = bound[x]
             return f"You scored {percent}%\nYour grade is {grade}"
-            break
         else:
             continue
     else:
