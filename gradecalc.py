@@ -33,8 +33,8 @@ if f_score < 0 or f_score > 100: # Check for validity of score
 else:
     pass
 
-# Call grade_calc procedure with user inputs as arguments
-grade_calc(h_score, a_score, f_score)
+# Call grade_calc function with user inputs as arguments
+print(grade_calc(h_score, a_score, f_score))
 
 
         
