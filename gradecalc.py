@@ -1,19 +1,16 @@
 # Defining percentage and grade calculation procedure
 def grade_calc(h, a, f):
     percent = (h + a + f)*100/175
-    print(f"You scored {percent}%")
     bound = {80: 'A', 70: 'B', 60: 'C', 50: 'D'}
     for x in bound:
-        
         if percent > x:
             grade = bound[x]
-            print(f"Your grade is {grade}")
+            return f"You scored {percent}%\nYour grade is {grade}"
             break
-        
         else:
             continue
     else:
-        print("Sorry, you did not pass")
+        return f"You scored {percent}%\nSorry, you did not pass"
 
 # User input homework score
 h_score = int(input("What is your homework score? "))
