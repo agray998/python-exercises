@@ -11,27 +11,32 @@ def grade_calc(h, a, f):
             continue
     else:
         return f"You scored {percent}%\nSorry, you did not pass"
-
+valid_score = False
+while !valid_score:
 # User input homework score
-h_score = int(input("What is your homework score? "))
-if h_score < 0 or h_score > 25: # Check for validity of score
-    print("Invalid score")
-else:
-    pass
+    h_score = int(input("What is your homework score? "))
+    if h_score < 0 or h_score > 25: # Check for validity of score
+        print("Invalid score")
+    else:
+        valid_score = True
 
+valid_score = False
+while !valid_score:
 # User input assessment score
-a_score = int(input("What is your assessment score? "))
-if a_score < 0 or a_score > 50: # Check for validity of score
-    print("Invalid score")
-else:
-    pass
+    a_score = int(input("What is your assessment score? "))
+    if a_score < 0 or a_score > 50: # Check for validity of score
+        print("Invalid score")
+    else:
+        valid_score = True
 
+valid_score = False
+while !valid_score:
 # User input final exam score
-f_score = int(input("What is your final exam score? "))
-if f_score < 0 or f_score > 100: # Check for validity of score
-    print("Invalid score")
-else:
-    pass
+    f_score = int(input("What is your final exam score? "))
+    if f_score < 0 or f_score > 100: # Check for validity of score
+        print("Invalid score")
+    else:
+        valid_score = True
 
 # Call grade_calc function with user inputs as arguments
 print(grade_calc(h_score, a_score, f_score))
