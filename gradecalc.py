@@ -1,15 +1,10 @@
 # Defining percentage and grade calculation function
 def grade_calc(h, a, f):
-    percent = (h + a + f)*100/175
-    bound = {80: 'A', 70: 'B', 60: 'C', 50: 'D'}
-    for x in bound:
-        if percent > x:
-            grade = bound[x]
-            return f"You scored {percent}%\nYour grade is {grade}"
-        else:
-            continue
-    else:
-        return f"You scored {percent}%\nSorry, you did not pass"
+    percent = int((h + a + f) * 100 / 175)
+    bounds = {100: 'A*', 90: 'A*', 80: 'A', 70: 'B', 60: 'C', 50: 'D'}
+    bound = percent - (percent % 10)
+    grade = bounds.get(bound, "Fail")
+    return f"You scored {percent}%. Your grade is {grade}"
 
 valid_score = False
 while valid_score == False:
