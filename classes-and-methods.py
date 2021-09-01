@@ -1,8 +1,5 @@
 class Student:
-
-    default = "student"
-
-    def __init__(self, name, age, class_=default):
+    def __init__(self, name, age, class_ = "Student"):
         self.name = name
         self.age = age
         self.class_ = class_
